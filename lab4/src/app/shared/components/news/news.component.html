@@ -1,0 +1,12 @@
+<script src="../usersComponents/friend-request/friendReq.component.ts"></script>
+<div class="news-component" *ngIf="newsList">
+  <div class="news-content" *ngFor="let item of newsList.news">
+    <div class="header">
+      <p>{{newsList.usernames[item.id].firstName}} {{newsList.usernames[item.id].lastName}} {{newsList.usernames[item.id].middleName}}</p>
+      <p>{{ item.date }}</p>
+    </div>
+    <div class="news">
+      <p>{{ item.title}}</p>
+    </div>
+  </div>
+</div>

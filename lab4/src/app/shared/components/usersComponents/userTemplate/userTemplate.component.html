@@ -1,0 +1,29 @@
+<div class="userTemplate-content" *ngIf="userList">
+    <div class="userTemplate" *ngFor="let item of userList">
+        <div class="another-user">
+            <div class="user-info">
+                <img [src]="'data:image/jpeg;base64,' + item.image" alt="Image" class="user-image">
+                <p>{{item.firstName}} {{item.lastName}} {{item.middleName}}</p>
+            </div>
+            <div class="buttons">
+                <ng-container *ngIf="!currentUser.friends.includes(item.id) && !item.friendsRequests.includes(currentUser.id) && !currentUser.friendsRequests.includes(item.id)">
+                  <button class="action" (click)="sendFriendReq(item.id)">Добавить в друзья</button>
+                </ng-container>
+
+              <ng-container *ngIf="item.friendsRequests.includes(currentUser.id)">
+                <button class="action" (click)="undoFriendReq(item.id)">Отменить заявку</button>
+              </ng-container>
+
+              <ng-container *ngIf="item.friends.includes(currentUser.id)">
+                <button class="action" (click)="removeFriend(item.id)">Удалить из друзей</button>
+              </ng-container>
+
+              <ng-container *ngIf="currentUser.friendsRequests.includes(item.id)">
+                  <button class="action" (click)="acceptFriendReq(item.id)">Принять заявку</button>
+                  <button class="action" (click)="rejectFriendReq(item.id)">Отклонить заявку</button>
+              </ng-container>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+
+:host {
+    font-family: "Noto Sans";
+}
+
+
+.landing-content-info {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.landing-content {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.landing-content p {
+    color: rgba(192, 192, 192, 0.7);
+}
+
+
+.mat-icon {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.landing-content button {
+    cursor: pointer;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: rgb(20,20,20);
+    color: white;
+    border-radius: 25px;
+}
+
+
+
+#enter-button {
+    padding: 12px 15px 12px 15px;
+}
+
+#registration-button {
+    padding: 12px 12px 12px 12px;
+}
+
+.landing-content button:hover {
+
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,1);
+}
+

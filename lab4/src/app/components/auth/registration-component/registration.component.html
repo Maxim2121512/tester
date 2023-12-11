@@ -1,0 +1,62 @@
+<div class="registration-component">
+
+    <h2> Регистрация </h2>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="email" id="email" name="email" [(ngModel)]="email" placeholder="Email"/>
+        <label class="text-field__label" for="email">Email</label>
+    </div>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="text" id="firstName" name="firstName" [(ngModel)]="firstName" placeholder="Имя"/>
+        <label class="text-field__label" for="firstName">Имя</label>
+    </div>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="text" id="lastName" name="lastName" [(ngModel)]="lastName" placeholder="Фамилия"/>
+        <label class="text-field__label" for="lastName">Фамилия</label>
+    </div>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="text" id="middleName" name="middleName" [(ngModel)]="middleName" placeholder="Отчество"/>
+        <label class="text-field__label" for="middleName">Отчество</label>
+    </div>
+
+    <p id="birthday-info">Дата рождения</p>
+
+    <div class="input-birthday">
+        <div class="text-field_floating-3" [class.selected]="birthdate.day">
+            <select class="text-field__input" id ="day" [(ngModel)]="birthdate.day" >
+               <option *ngFor="let d of days" [value]="d">{{ d }}</option>
+            </select>
+            <label class="text-field__label" for="day">День</label>
+        </div>
+
+        <div class="text-field_floating-3" [class.selected]="birthdate.month">
+            <select class="text-field__input" id ="month" [(ngModel)]="birthdate.month">
+                <option *ngFor="let m of months" [value]="m">{{ m }}</option>
+            </select>
+            <label class="text-field__label" for="month">Месяц</label>
+        </div>
+
+        <div class="text-field_floating-3" [class.selected]="birthdate.year">
+            <select class="text-field__input" id ="year" [(ngModel)]="birthdate.year">
+                <option *ngFor="let y of years" [value]="y">{{ y }}</option>
+            </select>
+            <label class="text-field__label" for="year">Год</label>
+        </div>
+    </div>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="password" id="password" name="password" [(ngModel)]="password" placeholder="Пароль"/>
+        <label class="text-field__label" for="password">Пароль</label>
+    </div>
+
+    <div class="text-field text-field_floating-2">
+        <input class="text-field__input" type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Подтвердите пароль"/>
+        <label class="text-field__label" for="confirmPassword">Подтвердите пароль</label>
+    </div>
+    <div class="submit-button">
+        <button id="registration-confirm-button" (click)="register()">Зарегистрироваться</button>
+    </div>
+</div>

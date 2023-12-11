@@ -1,0 +1,26 @@
+<div class="landing-component">
+    <div class="landing-content-info">
+      <p>Добро пожаловать!</p>
+      <p>Регистрируйтесь, чтобы присоединиться к общению с пользователями</p>
+    </div>
+
+
+    <div class="landing-content">
+        <button (click)="openRegistrationForm()" id="registration-button"><mat-icon>person_add</mat-icon> Регистрация</button>
+
+        <p>Уже зарегестрированы?</p>
+        <button (click)="openLoginForm()" id="enter-button">
+            <mat-icon class="mat-icon">lock</mat-icon> Войти
+        </button>
+    </div>
+
+
+
+    <shared-modal [isOpen]="isRegistrationFormOpen">
+        <registration-form></registration-form>
+    </shared-modal>
+
+    <shared-modal [isOpen]="isLoginFormOpen">
+        <login-form></login-form>
+    </shared-modal>
+</div>

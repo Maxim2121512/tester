@@ -1,0 +1,27 @@
+<div class="header-component">
+    <div class="buttons">
+        <button class="home-button" (click)="navigateToProfile()">Домой</button>
+    </div>
+    <div class="buttons">
+        <button class="users-button" (click)="allUsers()">Все пользователи</button>
+    </div>
+    <div class="buttons">
+        <button class="news-button" (click)="navigateToNews()">Новости</button>
+    </div>
+    <div class="buttons">
+        <button class="add-news-button" (click)="openAddNewsForm()">Добавить новость</button>
+    </div>
+
+    <div class="buttons" *ngIf="isAdmin">
+        <button class="admin-redirect" (click)="adminPanel()">Панель администратора</button>
+    </div>
+
+    <shared-modal [isOpen]="isFormOpen">
+        <div class="news-form">
+            <h2>Поделитесь своей новостью!</h2>
+            <input type="text" id="news" class="addNews" [(ngModel)]="news">
+            <button type="submit" class="button" id="addNews" (click)="addNews()">Отправить</button>
+        </div>
+    </shared-modal>
+
+</div>

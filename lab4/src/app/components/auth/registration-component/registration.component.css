@@ -1,0 +1,148 @@
+:host {
+    font-family: "Noto Sans";
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.text-field_floating-2 .text-field__input ,
+.text-field_floating-3 .text-field__input{
+    display: block;
+    align-items: center;
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 20;
+    color: white;
+    background-color: rgb(32,32,32);
+    background-clip: padding-box;
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-field_floating-2 .text-field__label {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: rgb(32,32,32);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.text-field_floating-3 .text-field__label {
+    font-size: 15px;
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    display: flex;
+    transform: translateY(-60%);
+    pointer-events: none;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding-left: 15px;
+    padding-right: 10px;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+
+.text-field__input:focus {
+    color: white;
+    background-color: rgb(32,32,32);
+    border-color: black;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.text-field_floating-2, .text-field_floating-3 {
+    position: relative;
+}
+
+.text-field_floating-2 .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+
+.text-field_floating-2 .text-field__input::placeholder {
+    color: transparent;
+}
+
+.text-field_floating-2 .text-field__input:focus~.text-field__label,
+.text-field_floating-2  .text-field__input:not(:placeholder-shown)~.text-field__label {
+    transform-origin: 65px;
+    transform: translateY(-50%) scale(0.65);
+    top: 0;
+}
+
+.text-field_floating-3 .text-field__input:focus~.text-field__label,
+.text-field_floating-3.selected .text-field__label {
+    /* Ваши стили при фокусе */
+    top: 0;
+    transform: translateY(0) scale(0.65);
+}
+
+
+.input-birthday {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-birthday div {
+    margin-right: 10px;
+}
+
+
+#day {
+    width: 100px;
+}
+
+#month {
+    width: 150px;
+}
+
+#year {
+    width: 100px;
+}
+
+#birthday-info {
+    margin-bottom: 1px;
+    margin-left: 5px;
+    color: white
+}
+
+
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submit-button button {
+    cursor: pointer;
+    font-family: "Noto Sans";
+    font-size: 15px;
+    border: 2px solid black;
+    background-color: rgb(20,20,20);
+    color: white;
+    border-radius: 25px;
+    padding: 12px 12px 12px 12px;
+}
+.submit-button button:hover {
+
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,1);
+}
+
+

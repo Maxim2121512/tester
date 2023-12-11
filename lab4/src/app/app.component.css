@@ -1,0 +1,35 @@
+::ng-deep .toast-error .mat-icon,
+::ng-deep .toast-success .mat-icon{
+  font-family: 'Material Icons';
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+::ng-deep .toast-error,
+::ng-deep .toast-success{
+  width: auto;
+  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  background-color: rgb(20,20,20);
+  border: 2px solid black;
+  padding: 10px 10px 10px 10px;
+  z-index: 1;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+::ng-deep .cause{
+  font-size: 20px;
+}
+
+::ng-deep .title{
+  font-weight: bold;
+  font-size: 25px;
+}
