@@ -1,0 +1,11 @@
+{
+  "startDate": "2021-12-10",
+  "currentDate": "2022-01-27",
+  "usedStocks": [
+    "AAPL",
+    "AMD",
+    "SBUX",
+    "TSLA"
+  ],
+  "speed": "5"
+}

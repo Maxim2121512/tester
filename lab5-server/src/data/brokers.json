@@ -1,0 +1,22 @@
+[
+  {
+    "userId": "1",
+    "username": "Максим",
+    "cash": "1000"
+  },
+  {
+    "userId": "2",
+    "username": "Артем",
+    "cash": "2000"
+  },
+  {
+    "userId": "3",
+    "username": "Влад",
+    "cash": "6000"
+  },
+  {
+    "userId": "4",
+    "username": "Олег",
+    "cash": "1234"
+  }
+]

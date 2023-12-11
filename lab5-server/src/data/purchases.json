@@ -1,0 +1,38 @@
+{
+    "1": {
+        "AAPL": {
+            "totalCount": "2",
+            "lossProfit": "0",
+            "purchases": [
+                {
+                    "date": "2023-12-10",
+                    "price": "500",
+                    "count": "1"
+                },
+                {
+                    "date": "2023-11-10",
+                    "price": "501",
+                    "count": "1"
+                }
+            ]
+        },
+        "TSLA": {
+            "totalCount": "1",
+            "lossProfit": "0",
+            "purchases": [
+                {
+                    "date": "2023-12-10",
+                    "price": "700",
+                    "count": "1"
+                }
+            ]
+        }
+    },
+    "2": {
+
+    },
+    "3": {
+
+    }
+}
+
