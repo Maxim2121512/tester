@@ -1,0 +1,72 @@
+<html lang="ru">
+<head>
+    <title>Друзья</title>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+
+
+<body>
+<div class="header">
+    <div class="header-content">
+
+    </div>
+</div>
+
+<div class="usersBlock">
+    <button class="button-back">На главную</button>
+    <div class="usersBlock-content">
+
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="form-change-userName">
+            <h2>Личная информация</h2>
+            <div class="form-group">
+                <label for="firstName">Имя</label>
+                <input type="text" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Фамилия</label>
+                <input type="text" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="middleName">Отчество</label>
+                <input type="text" id="middleName">
+            </div>
+            <h2>Контактная Информация</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <h2>Статусная информация</h2>
+            <div class="form-group">
+                <label for="select-status"></label>
+                <select class="select-menu" id="select-status">
+                    <option value="option-userName">не подтвержденный</option>
+                    <option value="option-userContacts">активный</option>
+                    <option value="option-userRoles">заблокированный</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="select-role"></label>
+                <select class="select-menu" id="select-role">
+                    <option value="option-userName">пользователь</option>
+                    <option value="option-userContacts" >администратор</option>
+                </select>
+            </div>
+            <button class="button" id="change-userName-confirm">Ок</button>
+        </form>
+    </div>
+</div>
+
+<script type="module" src="/public/javascripts/friendsPage.js"></script>
+</body>
+</html>
